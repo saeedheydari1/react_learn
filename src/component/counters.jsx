@@ -13,6 +13,7 @@ class Counters extends Component {
      }
 
      handelDelete=(counterId)=>{
+         console.log(counterId)
         const counters= this.state.counters.filter(c=>c.id!==counterId);
         this.setState({counters})
     }
